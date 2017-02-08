@@ -9,7 +9,7 @@ render(%s);',
 
 $t = microtime(true);
 $v8 = new V8Js;
-echo '// V8: Handlebar' . PHP_EOL;
+echo '// V8Js: Handlebar' . PHP_EOL;
 printf("new : %2.2f\n", (microtime(true) - $t) * 1000);
 $t = microtime(true);
 echo $v8->executeString($code) . PHP_EOL;

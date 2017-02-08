@@ -14,19 +14,19 @@ Hello World
 exec: 21.70
 total: 31.49
 
-// V8: Redux React
+// V8Js: Redux React
 new : 12.73
 <div data-reactroot="" data-reactid="1" data-react-checksum="1124870957"><!-- react-text: 2 -->Hello <!-- /react-text --><!-- react-text: 3 -->World<!-- /react-text --></div>
 exec: 80.92
 total: 95.01
 
-// v8 + Snapshot: Redux React
+// V8Js + Snapshot: Redux React
 new  15.35
 <div data-reactroot="" data-reactid="1" data-react-checksum="1124870957"><!-- react-text: 2 -->Hello <!-- /react-text --><!-- react-text: 3 -->World<!-- /react-text --></div>
 exec 18.99
 total: 36.77
 
-// V8: Handlebar
+// V8Js: Handlebar
 new : 12.88
 Hello World
 exec: 7.32

@@ -7,7 +7,7 @@ var window = this; render(%s);',
 );
 $t = microtime(true);
 $v8 = new V8Js('PHP', [], [], true, $blob);
-echo '// v8 + Snapshot: Redux React' . PHP_EOL;
+echo '// V8Js + Snapshot: Redux React' . PHP_EOL;
 printf("new  %2.2f\n", (microtime(true) - $t) * 1000);
 
 $t = microtime(true);
