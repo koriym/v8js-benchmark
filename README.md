@@ -9,28 +9,28 @@ $ composer install
 $ ./run.ssh
 
 // Twig
-new : 9.57
+new : 3.23
 Hello World
-exec: 21.70
-total: 31.49
+exec: 9.47
+total: 12.94
 
 // V8Js: Redux React
-new : 12.73
+new : 14.42
 <div data-reactroot="" data-reactid="1" data-react-checksum="1124870957"><!-- react-text: 2 -->Hello <!-- /react-text --><!-- react-text: 3 -->World<!-- /react-text --></div>
-exec: 80.92
-total: 95.01
+exec: 75.30
+total: 90.99
 
 // V8Js + Snapshot: Redux React
-new  15.35
+new  17.79
 <div data-reactroot="" data-reactid="1" data-react-checksum="1124870957"><!-- react-text: 2 -->Hello <!-- /react-text --><!-- react-text: 3 -->World<!-- /react-text --></div>
-exec 18.99
-total: 36.77
+exec 19.26
+total: 39.53
 
 // V8Js: Handlebar
-new : 12.88
+new : 13.18
 Hello World
-exec: 7.32
-total: 20.85
+exec: 7.39
+total: 21.00
 
 // v8js
 // V8 Engine Compiled Version => 5.1.281.47
