@@ -1,6 +1,6 @@
 # V8Js Benchmarking
 
-Compare `Twig` and `V8Js` powered Redux React.
+Compare the performance of the PHP template engine and V8Js powered Javascript view library.
 
 ## Run
 
@@ -37,3 +37,8 @@ total: 20.85
 // V8 Engine Linked Version => 5.1.281.47
 // Version => 1.3.3
 ```
+
+## About snapshot
+
+ * [20x performance boost with V8Js snapshots](http://stesie.github.io/2016/02/snapshot-performance)
+ * [https://github.com/phpv8/v8js/issues/205](https://github.com/phpv8/v8js/issues/205)
