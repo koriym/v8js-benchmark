@@ -4,6 +4,6 @@
         "ext-v8js": "*",
         "phpv8/v8js-stubs": "^1.3",
         "twig/twig": "^2.1",
-        "mindplay/benchpress": "dev-master"
+        "mindplay/benchpress": "^0.1.0"
     }
 }
