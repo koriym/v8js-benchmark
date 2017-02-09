@@ -1,8 +1,32 @@
 # V8Js Benchmarking
 
-Compare the performance of the PHP template engine and V8Js powered Javascript view library.
 
-## Run
+## Multiple runt test
+
+Compare with or without snapshot.
+
+```
+OVERHEAD:    0.000 msec
+BASELINE:    0.002 msec
+HOST OS:     Darwin
+PHP VERSION: 7.1.0
+MIN. TIME:   2000 msec
+MIN. MARKS:  30
+
+new V8Js without snapshot ........ 6.529 msec .. 4,252.041 points ....... 71.56% ......... 1.00x
+new V8Js with snapshot ........... 9.124 msec .. 5,941.913 points ...... 100.00% ......... 1.40x
+
+executeString() with snapshot ........... 0.174 msec .... 117.127 points ........ 2.52% ......... 1.00x
+executeString() without snapshot ........ 6.911 msec .. 4,646.427 points ...... 100.00% ........ 39.67x
+
+V8 + internal snapshot ......... 7.459 msec .. 4,961.625 points ....... 10.41% ......... 1.00x
+V8 + external snapshot  ....... 26.858 msec . 17,866.169 points ....... 37.48% ......... 3.60x
+V8 ............................ 71.668 msec . 47,674.422 points ...... 100.00% ......... 9.61x
+```
+
+## Single run tun
+
+Compare the performance of the PHP template engine and V8Js powered Javascript view library.
 
 ```
 $ composer install
