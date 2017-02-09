@@ -1,9 +1,7 @@
-# V8Js Benchmarking
+# V8Js snapshot benchmark
 
 
-## Multiple runt test
-
-Compare with or without snapshot.
+Run V8Js pwered redux react helloworld app with or without snapshot.
 
 ```
 OVERHEAD:    0.000 msec
@@ -19,12 +17,12 @@ new V8Js with snapshot ........... 9.124 msec .. 5,941.913 points ...... 100.00%
 executeString() with snapshot ........... 0.174 msec .... 117.127 points ........ 2.52% ......... 1.00x
 executeString() without snapshot ........ 6.911 msec .. 4,646.427 points ...... 100.00% ........ 39.67x
 
-V8 + internal snapshot ......... 7.459 msec .. 4,961.625 points ....... 10.41% ......... 1.00x
+V8 + internal snapshot ......... 7.459 msec .. 4,961.625 points ....... 10.41% ......... 1.00x // simulated
 V8 + external snapshot  ....... 26.858 msec . 17,866.169 points ....... 37.48% ......... 3.60x
 V8 ............................ 71.668 msec . 47,674.422 points ...... 100.00% ......... 9.61x
 ```
 
-## Single run tun
+## Single run test
 
 Compare the performance of the PHP template engine and V8Js powered Javascript view library.
 
@@ -66,3 +64,7 @@ total: 21.00
 
  * [20x performance boost with V8Js snapshots](http://stesie.github.io/2016/02/snapshot-performance)
  * [https://github.com/phpv8/v8js/issues/205](https://github.com/phpv8/v8js/issues/205)
+
+## Testing tool
+
+ * [mindplay/benchpress](https://github.com/mindplay-dk/benchpress) by @mindplay-dk
