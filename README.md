@@ -1,7 +1,7 @@
 # V8Js snapshot benchmark
 
 
-Run V8Js pwered redux react helloworld app with or without snapshot.
+Run V8Js with or without snapshot.
 
 ```
 // digitalocean 512M / 1CPU 
