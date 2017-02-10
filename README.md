@@ -4,6 +4,10 @@
 Run V8Js with or without snapshot.
 
 ```
+$ composer install
+$ php init.php
+$ php main.php
+
 // digitalocean 512M / 1CPU 
 
 OVERHEAD:    0.000 msec
