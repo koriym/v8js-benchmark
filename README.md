@@ -4,22 +4,25 @@
 Run V8Js pwered redux react helloworld app with or without snapshot.
 
 ```
+// digitalocean 512M / 1CPU 
+
 OVERHEAD:    0.000 msec
 BASELINE:    0.002 msec
-HOST OS:     Darwin
-PHP VERSION: 7.1.0
+HOST OS:     Linux
+PHP VERSION: 7.1.1-1+deb.sury.org~xenial+1
 MIN. TIME:   2000 msec
 MIN. MARKS:  30
 
-new V8Js without snapshot ........ 6.529 msec .. 4,252.041 points ....... 71.56% ......... 1.00x
-new V8Js with snapshot ........... 9.124 msec .. 5,941.913 points ...... 100.00% ......... 1.40x
+new V8Js without snapshot ........ 6.861 msec .. 1,957.176 points ....... 94.71% ......... 1.00x
+new V8Js with snapshot ........... 7.244 msec .. 2,066.595 points ...... 100.00% ......... 1.06x
 
-executeString() with snapshot ........... 0.174 msec .... 117.127 points ........ 2.52% ......... 1.00x
-executeString() without snapshot ........ 6.911 msec .. 4,646.427 points ...... 100.00% ........ 39.67x
+executeString() with snapshot ........... 0.329 msec .... 156.401 points ........ 3.57% ......... 1.00x
+executeString() without snapshot ........ 9.222 msec .. 4,383.321 points ...... 100.00% ........ 28.03x
 
-V8 + internal snapshot ......... 7.459 msec .. 4,961.625 points ....... 10.41% ......... 1.00x // simulated
-V8 + external snapshot  ....... 26.858 msec . 17,866.169 points ....... 37.48% ......... 3.60x
-V8 ............................ 71.668 msec . 47,674.422 points ...... 100.00% ......... 9.61x
+// new + executeString
+V8 + internal snapshot ......... 4.484 msec .. 2,138.804 points ........ 4.03% ......... 1.00x
+V8 + external snapshot  ....... 33.385 msec . 15,923.576 points ....... 30.03% ......... 7.45x
+V8 ........................... 111.167 msec . 53,023.027 points ...... 100.00% ........ 24.79x
 ```
 
 ## Single run test
@@ -31,33 +34,34 @@ $ composer install
 $ ./run.ssh
 
 // Twig
-new : 3.23
+new : 8.14
 Hello World
-exec: 9.47
-total: 12.94
+exec: 15.95
+total: 24.58
 
 // V8Js: Redux React
-new : 14.42
+new : 11.60
 <div data-reactroot="" data-reactid="1" data-react-checksum="1124870957"><!-- react-text: 2 -->Hello <!-- /react-text --><!-- react-text: 3 -->World<!-- /react-text --></div>
-exec: 75.30
-total: 90.99
+exec: 212.91
+total: 226.02
 
 // V8Js + Snapshot: Redux React
-new  17.79
+new  16.93
 <div data-reactroot="" data-reactid="1" data-react-checksum="1124870957"><!-- react-text: 2 -->Hello <!-- /react-text --><!-- react-text: 3 -->World<!-- /react-text --></div>
-exec 19.26
-total: 39.53
+exec 50.01
+total: 70.16
+
 
 // V8Js: Handlebar
-new : 13.18
+new : 11.56
 Hello World
-exec: 7.39
-total: 21.00
+exec: 22.07
+total: 34.01
 
 // v8js
-// V8 Engine Compiled Version => 5.1.281.47
-// V8 Engine Linked Version => 5.1.281.47
-// Version => 1.3.3
+V8 Engine Compiled Version => 5.2.371
+V8 Engine Linked Version => 5.2.371
+Version => 1.3.3
 ```
 
 ## About snapshot
