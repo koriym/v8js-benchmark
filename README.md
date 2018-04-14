@@ -63,39 +63,30 @@ V8 ........................... 157.335 msec . 67,839.129 points ...... 100.00% .
 
 Compare the performance of the PHP template engine and V8Js powered Javascript view library.
 
-```
-$ composer install
-$ ./run.ssh
-
-// Twig
-new : 8.14
+```// Twig
+new : 6.11
 Hello World
-exec: 15.95
-total: 24.58
+exec: 12.26
+total: 18.76
 
 // V8Js: Redux React
-new : 11.60
+new : 8.91
 <div data-reactroot="" data-reactid="1" data-react-checksum="1124870957"><!-- react-text: 2 -->Hello <!-- /react-text --><!-- react-text: 3 -->World<!-- /react-text --></div>
-exec: 212.91
-total: 226.02
+exec: 150.69
+total: 160.88
 
 // V8Js + Snapshot: Redux React
-new  16.93
+new  11.84
 <div data-reactroot="" data-reactid="1" data-react-checksum="1124870957"><!-- react-text: 2 -->Hello <!-- /react-text --><!-- react-text: 3 -->World<!-- /react-text --></div>
-exec 50.01
-total: 70.16
+exec 32.36
+total: 46.64
 
 
 // V8Js: Handlebar
-new : 11.56
+new : 7.32
 Hello World
-exec: 22.07
-total: 34.01
-
-// v8js
-V8 Engine Compiled Version => 5.2.371
-V8 Engine Linked Version => 5.2.371
-Version => 1.3.3
+exec: 12.54
+total: 20.40
 ```
 
 ## About snapshot
