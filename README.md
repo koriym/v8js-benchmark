@@ -8,25 +8,55 @@ $ composer install
 $ php init.php
 $ php main.php
 
-// digitalocean 512M / 1CPU 
+// digitalocean 1G RAM / 1CPU 
 
 OVERHEAD:    0.000 msec
 BASELINE:    0.002 msec
 HOST OS:     Linux
-PHP VERSION: 7.1.1-1+deb.sury.org~xenial+1
+PHP VERSION: 7.2.4-1+ubuntu14.04.1+deb.sury.org+1
 MIN. TIME:   2000 msec
 MIN. MARKS:  30
 
-new V8Js without snapshot ........ 6.861 msec .. 1,957.176 points ....... 94.71% ......... 1.00x
-new V8Js with snapshot ........... 7.244 msec .. 2,066.595 points ...... 100.00% ......... 1.06x
+* Completed: new V8Js without snapshot (570 iterations in 3.0 sec, avg. 5.266 msec)
+* Completed: new V8Js with snapshot (300 iterations in 3.1 sec, avg. 10.183 msec)
 
-executeString() with snapshot ........... 0.329 msec .... 156.401 points ........ 3.57% ......... 1.00x
-executeString() without snapshot ........ 9.222 msec .. 4,383.321 points ...... 100.00% ........ 28.03x
+Results
+-------
 
-// new + executeString
-V8 + internal snapshot ......... 4.484 msec .. 2,138.804 points ........ 4.03% ......... 1.00x
-V8 + external snapshot  ....... 33.385 msec . 15,923.576 points ....... 30.03% ......... 7.45x
-V8 ........................... 111.167 msec . 53,023.027 points ...... 100.00% ........ 24.79x
+new V8Js without snapshot ........ 5.233 msec .. 2,399.454 points ....... 51.76% ......... 1.00x
+new V8Js with snapshot .......... 10.110 msec .. 4,635.606 points ...... 100.00% ......... 1.93x
+OVERHEAD:    0.000 msec
+BASELINE:    0.002 msec
+HOST OS:     Linux
+PHP VERSION: 7.2.4-1+ubuntu14.04.1+deb.sury.org+1
+MIN. TIME:   2000 msec
+MIN. MARKS:  30
+
+* Completed: executeString() without snapshot (150 iterations in 2.3 sec, avg. 15.486 msec)
+* Completed: executeString() with snapshot (4,305 iterations in 2.0 sec, avg. 0.469 msec)
+
+Results
+-------
+
+executeString() with snapshot ........... 0.450 msec .... 215.473 points ........ 3.13% ......... 1.00x
+executeString() without snapshot ....... 14.367 msec .. 6,878.205 points ...... 100.00% ........ 31.92x
+OVERHEAD:    0.000 msec
+BASELINE:    0.002 msec
+HOST OS:     Linux
+PHP VERSION: 7.2.4-1+ubuntu14.04.1+deb.sury.org+1
+MIN. TIME:   2000 msec
+MIN. MARKS:  30
+
+* Completed: V8 (30 iterations in 4.8 sec, avg. 158.373 msec)
+* Completed: V8 + external snapshot  (90 iterations in 4.2 sec, avg. 46.213 msec)
+* Completed: V8 + internal snapshot (420 iterations in 2.8 sec, avg. 6.751 msec)
+
+Results
+-------
+
+V8 + internal snapshot ......... 6.687 msec .. 2,883.326 points ........ 4.25% ......... 1.00x
+V8 + external snapshot  ....... 45.457 msec . 19,599.813 points ....... 28.89% ......... 6.80x
+V8 ........................... 157.335 msec . 67,839.129 points ...... 100.00% ........ 23.53x
 ```
 
 ## Single run test
